@@ -1,0 +1,23 @@
+{
+  // path to CSV file
+  "csv": "path/from/this/file.csv",
+  // CSV delimiter (optional)
+  "delimiter": ",",
+  // generated id configuration
+  "id": {
+    // id property format: [prefix]-[number from 0 to max]
+    "prefix": "ID",
+    "max": 900000,
+    /* name of the generated id property in each object of the CSV data array
+     * must match itself in the models of the other database files
+     */
+    "property": "_id"
+  },
+  // qrcode output binary type
+  "qrcodeBinary": "png|svg",
+  /* other database files (optional)
+   * used to generate ids that are unique across multiple CSV files
+   * these database files are the output JSON files of parsing the other CSV files
+   */
+  "database": ["other_database_file_1.json", "other_database_file_2.json"]
+}
