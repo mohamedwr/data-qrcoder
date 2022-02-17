@@ -1,0 +1,29 @@
+{
+  "name": "data-qrcoder",
+  "version": "1.0.0",
+  "description": "a simple service that assigns qrcodes to data records",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js ../data/model.json",
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamedwr/data-qrcoder.git"
+  },
+  "author": "Mohamed Waleed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mohamedwr/data-qrcoder/issues"
+  },
+  "homepage": "https://github.com/mohamedwr/data-qrcoder#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "del": "^6.0.0",
+    "papaparse": "^5.3.1",
+    "qrcode": "^1.5.0"
+  }
+}
